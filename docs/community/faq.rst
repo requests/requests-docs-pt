@@ -1,58 +1,56 @@
 .. _faq:
 
-Frequently Asked Questions
+FAQ
 ==========================
 
-This part of the documentation answers common questions about Requests.
+Esta parte da documentação responde as perguntas mais frequentes sobre Requests.
 
-Encoded Data?
+Dados codificados?
 -------------
 
-Requests automatically decompresses gzip-encoded responses, and does
-its best to decode response content to unicode when possible.
+Requests descomprime automaticamente as respostas comprimidas com gzip e faz o possível
+para decodificar o conteúdo para unicode quando possível.
 
-You can get direct access to the raw response (and even the socket),
-if needed as well.
+Você tem acesso direto à resposta crua (e até mesmo ao socket), se for necessário.
 
 
-Custom User-Agents?
+User-Agents personalizados?
 -------------------
 
-Requests allows you to easily override User-Agent strings, along with
-any other HTTP Header.
+Requests permite que você facilmente sobrescreva informações de User-Agent, além de qualquer
+outro cabeçalho HTTP.
 
 
-Why not Httplib2?
+Por que não Httplib2?
 -----------------
 
-Chris Adams gave an excellent summary on
+Chris Adams deu uma excelente explicação em
 `Hacker News <http://news.ycombinator.com/item?id=2884406>`_:
 
-    httplib2 is part of why you should use requests: it's far more respectable
-    as a client but not as well documented and it still takes way too much code
-    for basic operations. I appreciate what httplib2 is trying to do, that
-    there's a ton of hard low-level annoyances in building a modern HTTP
-    client, but really, just use requests instead. Kenneth Reitz is very
-    motivated and he gets the degree to which simple things should be simple
-    whereas httplib2 feels more like an academic exercise than something
-    people should use to build production systems[1].
+    httplib2 é parte do motivo por que você deveria usar requests: é bem mais respeitável
+    como um cliente, mas não é tão bem documentado e ainda precisa de muito código para relizar
+    operações básicas. Eu reconheço o que httplib2 está tentando fazer, no sentido que há muitas
+    complicações de baixo nível em construir um cliente HTTP moderno, porém, use requests.
+    Kenneth Reitz é bastante motivado e ele entende o conceito de que coisas simples devem ser simples
+    enquanto httplib2 parece muito mais um exercício acadêmico do que algo que as pessoas
+    deveriam usar para criar sistemas em produção[1].
 
-    Disclosure: I'm listed in the requests AUTHORS file but can claim credit
-    for, oh, about 0.0001% of the awesomeness.
+    Confissão: Eu apareço no arquivo AUTHORS do requests mas eu só tomo crédito por
+    mais ou menos 0,0001% do quão sensacional ele é.
 
-    1. http://code.google.com/p/httplib2/issues/detail?id=96 is a good example:
-    an annoying bug which affect many people, there was a fix available for
-    months, which worked great when I applied it in a fork and pounded a couple
-    TB of data through it, but it took over a year to make it into trunk and
-    even longer to make it onto PyPI where any other project which required "
-    httplib2" would get the working version.
+    1. http://code.google.com/p/httplib2/issues/detail?id=96 é um bom exemplo:
+    um bug que afeta muitas pessoas, havia uma correção disponível há meses, que
+    funcionava muito bem quando eu o aplicava em um fork e passava TBs de dados por ele,
+    mas demorou mais de 1 ano para ser aplicado ao código e ainda mais tempo para
+    estar disponível pelo PyPI, onde qualquer outro projeto que depende de "httplib2"
+    conseguiria a versão funcional.
 
 
-Python 3 Support?
+Suporte ao Python 3?
 -----------------
 
-Yes! Here's a list of Python platforms that are officially
-supported:
+Sim! Aqui está uma lista de plataformas do Python que
+são suportadas oficialmente:
 
 * Python 2.6
 * Python 2.7
