@@ -38,7 +38,7 @@ Requests retira todo o trabalho do protocolo HTTP/1.1 do Python - deixando a int
 Depoimentos
 -----------------
 
-Her Majesty's Government, Amazon, Google, Twilio, Mozilla, Heroku, PayPal, NPR, Obama for America, Transifex, Native Instruments, The Washington Post, Twitter, SoundCloud, Kippt, Readability, e Institutos Federais dos Estados Unidos usam Requests internamente. Ele já foi baixado mais de 2.000.000 de vezes pelo PyPI.
+O Governo de Sua Majestade, Amazon, Google, Twilio, Mozilla, Heroku, PayPal, NPR, Obama for America, Transifex, Native Instruments, The Washington Post, Twitter, SoundCloud, Kippt, Readability, e Institutos Federais dos Estados Unidos usam Requests internamente. Requests já foi baixado mais de 2 milhões de vezes pelo PyPI.
 
 **Armin Ronacher**
     Requests é o exemplo perfeito de como uma API pode ser bonita com o nível certo de abstração.
@@ -47,7 +47,7 @@ Her Majesty's Government, Amazon, Google, Twilio, Mozilla, Heroku, PayPal, NPR, 
     Eu vou tatuar o módulo Python do @kennethreitz no meu corpo, de algum jeito. Ele todo.
 
 **Daniel Greenfeld**
-    Refiz uma biblioteca com 1200 linhas de código confusa com 10 linhas de código graças à biblioteca requests do @kennethreitz. Hoje foi SENSACIONAL.
+    Refiz uma biblioteca com 1200 linhas de código spaghetti com 10 linhas de código graças ao módulo requests do @kennethreitz. Hoje foi SENSACIONAL.
 
 **Kenny Meyers**
     HTTP em Python: Com dúvidas, sem dúvidas, use Requests. Bonito, simples, Pythônico.
