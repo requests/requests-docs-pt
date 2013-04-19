@@ -1,42 +1,42 @@
 .. _authentication:
 
-Authentication
-==============
+Autenticação
+============
 
-This document discusses using various kinds of authentication with Requests.
+Este documento discute o uso de vários tipos de autenticação com Requests.
 
-Many web services require authentication, and there are many different types.
-Below, we outline various forms of authentication available in Requests, from
-the simple to the complex.
+Muitos serviços web exigem autenticação, e existem vários tipos diferentes.
+Abaixo, vamos esboçar várias formas de autenticação disponíveis no Requests,
+do simples ao complexo.
 
 
-Basic Authentication
---------------------
+HTTP Basic Auth
+---------------
 
-Many web services that require authentication accept HTTP Basic Auth. This is
-the simplest kind, and Requests supports it straight out of the box.
+Muitos serviços web que exigem autenticação aceitam HTTP Basic Auth.
+Esta é a maneira mais simples e Requests suporta-a nativamente.
 
-Making requests with HTTP Basic Auth is very simple::
+Fazer requisições usando HTTP Basic Auth é muito simples::
 
     >>> from requests.auth import HTTPBasicAuth
     >>> requests.get('https://api.github.com/user', auth=HTTPBasicAuth('user', 'pass'))
     <Response [200]>
 
-In fact, HTTP Basic Auth is so common that Requests provides a handy shorthand
-for using it::
+Na verdade, HTTP Basic Auth é tão comum que Requests fornece um atalho útil
+para usá-lo::
 
     >>> requests.get('https://api.github.com/user', auth=('user', 'pass'))
     <Response [200]>
 
-Providing the credentials in a tuple like this is exactly the same as the
-``HTTPBasicAuth`` example above.
+Fornecendo as credenciais em uma tupla desse jeito é exatamente o mesmo
+que usar ``HTTPBasicAuth`` como no exemplo acima.
 
 
-Digest Authentication
----------------------
+Autenticação Digest
+-------------------
 
-Another very popular form of HTTP Authentication is Digest Authentication,
-and Requests supports this out of the box as well::
+Outra forma bastante popular de autenticação HTTP é autenticação Digest,
+e Requests também a suporta nativamente::
 
     >>> from requests.auth import HTTPDigestAuth
     >>> url = 'http://httpbin.org/digest-auth/auth/user/pass'
@@ -44,10 +44,10 @@ and Requests supports this out of the box as well::
     <Response [200]>
 
 
-OAuth 1 Authentication
-----------------------
+Autenticação com OAuth 1
+------------------------
 
-A common form of authentication for several web APIs is OAuth. The ``requests-oauthlib`` library allows Requests users to easily make OAuth authenticated requests::
+Uma forma comum de autenticação para várias APIs web é OAuth. A biblioteca ``requests-oauthlib`` permite que usuários do Requests façam requisições autenticadas facilmente::
 
     >>> import request
     >>> from requests_oauthlib import OAuth1
@@ -59,45 +59,46 @@ A common form of authentication for several web APIs is OAuth. The ``requests-oa
     >>> requests.get(url, auth=auth)
     <Response [200]>
 
-For more information on how to OAuth flow works, please see the official `OAuth`_ website.
-For examples and documentation on requests-oauthlib, please see the `requests_oauthlib`_ repository on GitHub
+Para mais informações sobre como o fluxo do OAuth funciona, veja o site official do `OAuth`_.
+Para exemplo e documentação do requests-oauthlib, veja o repositório do `requests_oauthlib`_ no GitHub.
 
 
-Other Authentication
---------------------
+Outras formas de autenticação
+-----------------------------
 
-Requests is designed to allow other forms of authentication to be easily and
-quickly plugged in. Members of the open-source community frequently write
-authentication handlers for more complicated or less commonly-used forms of
-authentication. Some of the best have been brought together under the
-`Requests organization`_, including:
+Requests é feito para permitir que outras formas de autenticação sejam
+fácil e rapidamente plugadas. Membros da comunidade open-source frequentemente
+escrevem handlers para formas de autenticação mais complicadas ou menos
+comumente usadas. Algumas das melhores foram reunidas sob a
+`organização Requests`_, incluindo:
 
 - Kerberos_
 - NTLM_
 
-If you want to use any of these forms of authentication, go straight to their
-Github page and follow the instructions.
+Se você quiser usar algumas dessas formas de autenticação, vá direto para
+a página delas no GitHub e siga as instruções.
 
 
-New Forms of Authentication
----------------------------
+Novas formas de autenticação
+----------------------------
 
-If you can't find a good implementation of the form of authentication you
-want, you can implement it yourself. Requests makes it easy to add your own
-forms of authentication.
+Se você não conseguir achar uma boa implementação para a forma de autenticação
+que quiser, você mesmo pode implementá-la. Requests deixa fácil a adição
+da sua própria forma de autenticação.
 
-To do so, subclass :class:`requests.auth.AuthBase` and implement the
-``__call__()`` method. When an authentication handler is attached to a request,
-it is called during request setup. The ``__call__`` method must therefore do
-whatever is required to make the authentication work. Some forms of
-authentication will additionally add hooks to provide further functionality.
+Para fazer isto, herde a classe :class:`requests.auth.AuthBase` e implemente
+o método ``__call__()``. Quando um handler de autenticação é anexada a uma
+requisição, ele é chamado durante a configuração da requisição. O método
+``__call__()`` deve, então, fazer o que tiver que ser feito para fazer
+a autenticação funcionar. Algumas formas de autenticação poderão adicionar
+hooks para fornecer alguma funcionalidade posterior.
 
-Examples can be found under the `Requests organization`_ and in the
-``auth.py`` file.
+Exemplos podem ser encontrados na `organização Requests`_ e no arquivo
+``auth.py``.
 
 .. _OAuth: http://oauth.net/
 .. _requests_oauthlib: https://github.com/requests/requests-oauthlib
 .. _Kerberos: https://github.com/requests/requests-kerberos
 .. _NTLM: https://github.com/requests/requests-ntlm
-.. _Requests organization: https://github.com/requests
+.. _organização Requests: https://github.com/requests
 
