@@ -6,14 +6,14 @@ Suporte
 Se você tiver perguntas ou encontrar problemas com Requests, existem várias opções:
 
 Envie um Tweet
-------------
+--------------
 
 Se a sua pergunta tiver menos de 140 caracteres, fique à vontade para mandar um tweet para
 `@kennethreitz <http://twitter.com/kennethreitz>`_.
 
 
 Criar uma Issue
--------------
+---------------
 
 Se você notar algum comportamento inexperado com Requests, ou você quiser suporte
 para alguma nova funcionalidade,

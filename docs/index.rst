@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Requests: HTTP para Humanos
-=========================
+===========================
 
 Release v\ |version|. (:ref:`Instalação <install>`)
 
@@ -36,7 +36,7 @@ Requests retira todo o trabalho do protocolo HTTP/1.1 do Python - deixando a int
 
 
 Depoimentos
------------------
+-----------
 
 O Governo de Sua Majestade, Amazon, Google, Twilio, Mozilla, Heroku, PayPal, NPR, Obama for America, Transifex, Native Instruments, The Washington Post, Twitter, SoundCloud, Kippt, Readability, e Institutos Federais dos Estados Unidos usam Requests internamente. Requests já foi baixado mais de 2 milhões de vezes pelo PyPI.
 
@@ -74,7 +74,7 @@ Requests está pronto para a web de hoje.
 
 
 Guia do Usuário
------------------
+---------------
 
 Esta parte da documentação, que é principalmente prosa, começa com algumas informações
 sobre o Requests e então foca em instruções passo-a-passo para aproveitar o máximo do Requests.
@@ -90,7 +90,7 @@ sobre o Requests e então foca em instruções passo-a-passo para aproveitar o m
 
 
 Guia da Comunidade
------------------
+------------------
 
 Esta parte da documentação, que é principalmente prosa, detalha o ecossistema
 e a comunidade do Requests.
@@ -104,7 +104,7 @@ e a comunidade do Requests.
    community/updates
 
 Documentação da API
------------------
+-------------------
 
 Se você estiver procurando por informações sobre uma função, classe ou método específico,
 esta parte da documentação é para você.
@@ -116,7 +116,7 @@ esta parte da documentação é para você.
 
 
 Guia de Contribuição
------------------
+--------------------
 
 Se você quiser contribuir para o projeto, esta parte da documentação é para você.
 

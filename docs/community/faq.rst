@@ -1,12 +1,12 @@
 .. _faq:
 
 FAQ
-==========================
+===
 
 Esta parte da documentação responde as perguntas mais frequentes sobre Requests.
 
 Dados codificados?
--------------
+------------------
 
 Requests descomprime automaticamente as respostas comprimidas com gzip e faz o possível
 para decodificar o conteúdo para unicode quando possível.
@@ -15,14 +15,14 @@ Você tem acesso direto à resposta crua (e até mesmo ao socket), se for necess
 
 
 User-Agents personalizados?
--------------------
+---------------------------
 
 Requests permite que você facilmente sobrescreva informações de User-Agent, além de qualquer
 outro cabeçalho HTTP.
 
 
 Por que não Httplib2?
------------------
+---------------------
 
 Chris Adams deu uma excelente explicação em
 `Hacker News <http://news.ycombinator.com/item?id=2884406>`_:
@@ -47,7 +47,7 @@ Chris Adams deu uma excelente explicação em
 
 
 Suporte ao Python 3?
------------------
+--------------------
 
 Sim! Aqui está uma lista de plataformas do Python que
 são suportadas oficialmente:
