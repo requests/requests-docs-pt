@@ -1,27 +1,27 @@
-How to Help
+Como Ajudar
 ===========
 
-Requests is under active development, and contributions are more than welcome!
+Requests está sob desenvolvimento ativo e contribuições são mais que bem-vindas!
 
-#. Check for open issues or open a fresh issue to start a discussion around a bug.
-   There is a Contributor Friendly tag for issues that should be ideal for people who are not very
-   familiar with the codebase yet.
-#. Fork `the repository <https://github.com/kennethreitz/requests>`_ on Github and start making your
-   changes to a new branch.
-#. Write a test which shows that the bug was fixed.
-#. Send a pull request and bug the maintainer until it gets merged and published. :)
-   Make sure to add yourself to `AUTHORS <https://github.com/kennethreitz/requests/blob/master/AUTHORS.rst>`_.
+#. Procure por issues abertas ou abra uma nova issue para começar uma discussão sobre um bug.
+   Existe um tag Contributor Friendly para issues que são ideais para pessoas que não estão muito
+   familiarizadas com a base de código ainda.
+#. Faça um fork do `repositório <https://github.com/kennethreitz/requests>`_ no GitHub e comece
+   a fazer suas mudanças em uma nova branch.
+#. Escreva um teste que mostra que seu bug foi corrigido.
+#. Crie um pull request e avise o mantenedor até que seja aceito e publicado. :)
+   Certifique-se de se adicionar no arquivo `AUTHORS <https://github.com/kennethreitz/requests/blob/master/AUTHORS.rst>`_.
 
-Feature Freeze
---------------
+Congelamento de funcionalidades
+-------------------------------
 
-As of v1.0.0, Requests has now entered a feature freeze. Requests for new
-features and Pull Requests implementing those features will not be accepted.
+A partir da versão v1.0.0., Requests entrou num período de congelamento de funcionalidades.
+Pedidos de novas funcionalidades e Pull Requests implementando-as não serão aceitos.
 
-Development Dependencies
-------------------------
+Dependências de desenvolvimento
+-------------------------------
 
-You'll need to install py.test in order to run the Requests' test suite::
+Você vai precisar instalar py.test para rodar a suíte de tests de Requests::
 
     $ pip install -r requirements.txt
     $ invoke test
@@ -32,10 +32,10 @@ You'll need to install py.test in order to run the Requests' test suite::
     test_requests.py .........................
     25 passed in 3.50 seconds
 
-Runtime Environments
---------------------
+Ambientes de execução
+---------------------
 
-Requests currently supports the following versions of Python:
+Requests atualmente suporta as seguintes versões do Python:
 
 - Python 2.6
 - Python 2.7
@@ -44,12 +44,12 @@ Requests currently supports the following versions of Python:
 - Python 3.3
 - PyPy 1.9
 
-Support for Python 3.1 and 3.2 may be dropped at any time.
+Suporte para Python 3.1 e 3.2 pode ser descontinuado a qualquer momento.
 
-Google App Engine will never be officially supported. Pull requests for compatibility will be accepted, as long as they don't complicate the codebase.
+Google App Engine nunca será oficialmente suportado. Pull requests para compatibilidade serão aceitos, desde que eles não compliquem a base código.
 
 
-Are you crazy?
---------------
+Você está louco?
+----------------
 
-- SPDY support would be awesome. No C extensions.
+- Suporte a SPDY seria fantástico. Sem extensões em C.
