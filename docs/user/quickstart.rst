@@ -121,7 +121,7 @@ você pode usar o seguinte código:
     >>> i = Image.open(StringIO(r.content))
 
 
-Respota JSON
+Resposta JSON
 ------------
 
 Também existe um decodificador JSON integrado, no caso de você lidar com dados JSON::
