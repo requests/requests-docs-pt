@@ -117,8 +117,8 @@ Por exemplo, para criar uma imagem de dados binários retornados por uma requisi
 você pode usar o seguinte código:
 
     >>> from PIL import Image
-    >>> from StringIO import StringIO
-    >>> i = Image.open(StringIO(r.content))
+    >>> from io import BytesIO
+    >>> i = Image.open(BytesIO(r.content))
 
 
 Resposta JSON
